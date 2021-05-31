@@ -1,0 +1,19 @@
+[package]
+name = "py-rs"
+version = "0.1.0"
+authors = ["Elliot Block <elliot@deck36.net>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rocksdb = "0.16.0"
+
+[lib]
+name = "pyrs"
+crate-type = ["cdylib"]
+
+
+[dependencies.pyo3]
+version = "0.13.2"
+features = ["extension-module"]
